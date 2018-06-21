@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/functions.js"></script>
+
+</head>
+
+<body>
+    <div class="container border rounded" id="main-form">
+        <div class="row p-4">
+            <div class="col-md-8 col-sm-6">
+                <div class="row pl-4 pr-4 pt-4">
+                    <div class="jumbotron"></div>
+                </div>
+                <div class="row pl-4 pr-4 pb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Animal Name</h5>
+                            <p class="card-text">Some quick text to to describe the animal selected on the card's content. This info is received
+                                from Wikipedia</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 pt-4">
+                <div class="row pl-4 pr-4">
+                    <form class="form" id="add-area">
+                        <input class="form-control mr-sm-2" type="search" placeholder="New Animal" aria-label="add">
+                        <button class="btn btn-block btn-outline-primary my-2" type="button" id="btn-add-animal">Add</button>
+                    </form>
+                </div>
+                <div class="row p-4">
+                    <select class="custom-select" size="15" id="animal-selector">
+                        <option value="1" selected>One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row pl-5 pr-5">
+            <div class="jumbotron p-4" id="favorites-gif">
+                <h3>My Favorites Gifs!</h3>
+                <hr class="my-4">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

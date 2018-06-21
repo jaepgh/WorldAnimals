@@ -1,0 +1,23 @@
+#main-form{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.jumbotron{
+    width: 100%;
+}
+.card{
+    width: 100%;
+}
+#animal-selector{
+    width: 100%;
+}
+#add-area{
+    width: 100%;
+}
+#btn-add-animal{
+    display: block;
+    float: right;
+}
+
