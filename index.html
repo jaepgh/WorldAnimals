@@ -22,15 +22,15 @@
         <div class="row p-4">
             <div class="col-md-8 col-sm-6">
                 <div class="row pl-4 pr-4 pt-4">
-                    <div class="jumbotron"></div>
+                    <div class="jumbotron" id="gifs-container"></div>
                 </div>
-                <div class="row pl-4 pr-4 pb-4">
+                <div class="row pl-4 pr-4 pb-4" style="display: none" id="info-frame">
                     <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Animal Name</h5>
-                            <p class="card-text">Some quick text to to describe the animal selected on the card's content. This info is received
+                        <div class="card-body" id="info-card">
+                            <h5 class="card-title" id="info-card-name">Animal Name</h5>
+                            <p class="card-text" id="info-card-content">Some quick text to to describe the animal selected on the card's content. This info is received
                                 from Wikipedia</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <a href="#" target="_blank" class="btn btn-primary" id="info-card-link">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -38,23 +38,17 @@
             <div class="col-md-4 col-sm-6 pt-4">
                 <div class="row pl-4 pr-4">
                     <form class="form" id="add-area">
-                        <input class="form-control mr-sm-2" type="search" placeholder="New Animal" aria-label="add">
+                        <input class="form-control mr-sm-2" type="search" placeholder="New Animal" aria-label="add" id="animal-input">
                         <button class="btn btn-block btn-outline-primary my-2" type="button" id="btn-add-animal">Add</button>
                     </form>
                 </div>
                 <div class="row p-4">
                     <select class="custom-select" size="15" id="animal-selector">
-                        <option value="1" selected>One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="Cat">Cat</option>
+                        <option value="Dog">Dog</option>
+                        <option value="Duck">Duck</option>
                     </select>
                 </div>
-            </div>
-        </div>
-        <div class="row pl-5 pr-5">
-            <div class="jumbotron p-4" id="favorites-gif">
-                <h3>My Favorites Gifs!</h3>
-                <hr class="my-4">
             </div>
         </div>
     </div>
