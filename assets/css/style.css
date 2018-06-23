@@ -3,7 +3,7 @@
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
-    height: 650px;
+    min-height: 650px;
 }
 .jumbotron{
     width: 100%;
@@ -21,4 +21,47 @@
     display: block;
     float: right;
 }
+body{
+    background-image: url(../images/bg-2.jpg);
+    background-size: cover;
+    height: 100%;
+    opacity: .95;
+    overflow: hidden;
+}
 
+
+/****************FAVORITE CHECK******************/
+label input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  margin-left: 2em;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-checkbox .fa-star {
+  color: gold;
+  position: absolute;
+  top: 0.4em;
+  left: -1.25em;
+  font-size: 0.75em;
+}
+
+.custom-checkbox .far {
+  color: gray;
+}
+
+.custom-checkbox .fas {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.custom-checkbox:hover .fas{
+  opacity: 0.5;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .fas {
+  opacity: 1;
+}
