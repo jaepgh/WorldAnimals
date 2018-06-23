@@ -45,9 +45,7 @@ function renderAnimalInfo(animal) {
 //Use giphy api to render 4 images.
 function renderGifs(animal) {
     var searchCriteria = $(animal).val().replace(/\s/g, '+');
-    var queryURL = "http://api.giphy.com/v1/gifs/search?api_key=fXhM70lStyUoO0fA7UVKnRjm0ADkzZgL&limit=4&q=" + searchCriteria;
-    
-    console.log('1');
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=fXhM70lStyUoO0fA7UVKnRjm0ADkzZgL&limit=4&q=" + searchCriteria;
 
     $.ajax({
         url: queryURL,
@@ -56,8 +54,6 @@ function renderGifs(animal) {
         var temArray = response.data;
         var imgRow = $('<div>');
         imgRow.addClass('row');
-        
-        console.log('2');
 
         $('#gifs-container').empty();
         $('#gifs-container').append(imgRow);
@@ -88,7 +84,6 @@ function renderGifs(animal) {
             imgRow.append(wrapper);
 
             currentSetOfGif.push(imageUrl);
-            console.log('3');
         }
 
     });
