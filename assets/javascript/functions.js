@@ -57,7 +57,7 @@ function loadInfo() {
     favoritesGifs = JSON.parse(localStorage.getItem("favoritesGifs"));
 
     if (!Array.isArray(userAnimals)) {
-        userAnimals = [];
+        //Do nothing an keep the default values
     } else {
         //empty animal selector
         $('#animal-selector').empty();
