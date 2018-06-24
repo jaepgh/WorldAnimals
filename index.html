@@ -20,11 +20,11 @@
 </head>
 
 <body>
-    <div class="container border rounded bg-white" id="main-form">
+    <div class="container border rounded bg-white col-md-10" id="main-form">
         <div class="row p-4">
             <div class="col-md-8 col-sm-6">
                 <div class="row pl-4 pr-4 pt-4">
-                    <div class="jumbotron bg-white" id="gifs-container">
+                    <div class="jumbotron bg-white pb-1" id="gifs-container">
                     </div>
                 </div>
                 <div class="row pl-4 pr-4 pb-4" style="display: none" id="info-frame">
@@ -33,7 +33,7 @@
                             <h5 class="card-title" id="info-card-name">Animal Name</h5>
                             <p class="card-text" id="info-card-content">Some quick text to to describe the animal selected on the card's content. This info is received
                                 from Wikipedia</p>
-                            <a href="#" target="_blank" class="btn btn-primary" id="info-card-link">Learn More</a>
+                            <a href="#" target="_blank" class="btn btn-success" id="info-card-link">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                 <div class="row pl-4 pr-4">
                     <form class="form" id="add-area">
                         <input class="form-control mr-sm-2" type="search" placeholder="New Animal" aria-label="add" id="animal-input">
-                        <button class="btn btn-block btn-outline-primary my-2" type="button" id="btn-add-animal">Add</button>
+                        <button class="btn btn-block btn-outline-success my-2" type="button" id="btn-add-animal">Add</button>
                     </form>
                 </div>
                 <div class="row p-4">
@@ -55,6 +55,26 @@
             </div>
         </div>
     </div>
+
+    <div class="modal" tabindex="-1" role="dialog" aria-hidden="true" id="infoModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-text">Modal text .</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.js"></script>
