@@ -248,7 +248,10 @@ function clearCurrentSet() {
 }
 //Checks if a gif is on the favorites or not
 function isFavorite(imageUrl) {
-    return favoritesGifs.indexOf(imageUrl) >= 0;
+    if (!jQuery.isEmptyObject(favoritesGifs)) {
+        return favoritesGifs.indexOf(imageUrl) >= 0;
+    } 
+    return false;
 }
 
 function informationModal(outputTitle, outputMessage) {
